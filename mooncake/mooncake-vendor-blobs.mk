@@ -16,10 +16,18 @@
 
 # All the blobs necessary for mooncake
 
+# AKMD
+ifeq ($(SENSORS_COMPASS_AK8973),true)
+PRODUCT_COPY_FILES +=     vendor/zte/mooncake/proprietary/bin/akmd2:system/bin/akmd2
+else
+ifeq ($(SENSORS_COMPASS_AK8962),true)
+PRODUCT_COPY_FILES +=     vendor/zte/mooncake/proprietary/bin/akmd8962:system/bin/akmd8962
+endif # SENSORS_COMPASS_AK8962
+endif # SENSORS_COMPASS_AK8973
+
 # Binary
 PRODUCT_COPY_FILES += \
     vendor/zte/mooncake/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/zte/mooncake/proprietary/bin/akmd2:system/bin/akmd2 \
     vendor/zte/mooncake/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/zte/mooncake/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init
 
