@@ -16,6 +16,8 @@
 
 # All the blobs necessary for mooncake
 
+include device/zte/mooncake/BoardConfig.mk
+
 # AKMD
 ifeq ($(SENSORS_COMPASS_AK8973),true)
 PRODUCT_COPY_FILES +=     vendor/zte/mooncake/proprietary/bin/akmd2:system/bin/akmd2
