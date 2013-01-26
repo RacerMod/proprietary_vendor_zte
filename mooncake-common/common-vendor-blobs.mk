@@ -74,5 +74,4 @@ PRODUCT_COPY_FILES += \
     vendor/zte/mooncake-common/proprietary/system/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
     vendor/zte/mooncake-common/proprietary/system/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
     vendor/zte/mooncake-common/proprietary/system/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
-    vendor/zte/mooncake-common/proprietary/system/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
-    vendor/zte/mooncake-common/proprietary/system/lib/hw/gralloc.mooncake.so:system/lib/hw/gralloc.mooncake.so
+    vendor/zte/mooncake-common/proprietary/system/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
